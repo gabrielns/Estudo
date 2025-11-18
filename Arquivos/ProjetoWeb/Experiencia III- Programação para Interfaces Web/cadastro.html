@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG para sua ONG</title>
+        <link rel="stylesheet" href="css/design-system.css">
 </head>
 <body>
-    <header>
-        <img src="img/logo.svg" alt="Logo da ONG">
-        <h1>Gestao de Projetos</h1>
-    </header>
+        <header class="container">
+            <div style="display:flex;align-items:center;justify-content:space-between;width:100%">
+                <div class="brand">
+                    <img src="img/logo.svg" alt="Logo da ONG">
+                    <h1 class="site-title">Gestão de Projetos</h1>
+                </div>
+                <nav class="main-nav" aria-label="Navegação principal">
+                    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li class="menu-item">
+                            <a href="projetos.html">Projetos ▾</a>
+                            <div class="submenu" role="menu">
+                                <a href="projetos.html">Ver projetos</a>
+                                <a href="cadastro.html">Cadastrar projeto</a>
+                            </div>
+                        </li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     <main>
 
         <p>Descrição dos projetos em andamento e futuros da ONG.</p>
@@ -17,7 +37,8 @@
         <p>Formulário de cadastro para voluntários e doadores.</p>
         <h1>Cadastro de Usuário</h1>
         <p>Preencha seus dados para continuar o cadastro. Todos os campos são obrigatórios.</p>
-        <form id="registrationForm" action="#" method="POST">
+                    <form id="registrationForm" action="#" method="POST" novalidate>
+                        <div id="form-alert" class="alert" style="display:none" role="alert" aria-live="assertive"></div>
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <label for="nome">Nome Completo</label>
@@ -83,8 +104,12 @@
             </fieldset>
             <button type="submit">Cadastrar Agora</button>
         </form> 
-        <p><a href="index.html">Pagina Inicial</a></p> 
-        <p><a href="projetos.html">Projetos</a></p>
+
+    <section >
+        <p>Deseja cadastrar seu próprio projeto para receber apoio?</p>
+        <p><a class="btn btn--primary" href="index.html">Pagina Inicial</a></p>
+        <p><a class="btn btn--primary" href="projetos.html">Projetos</a></p> 
+    </section>
     </main>
     <footer>    
         <h1>Contato</h1>
@@ -95,5 +120,7 @@
             <p><a href="//www.facebook.com/ongdasongs">Facebook</a> | <a href="@ongdasongs">Instagram</a> | <a href="x.com/ongdasongs">X/Twitter</a></p> 
     </footer>
     
+<script src="js/form-validation.js"></script>
+<script src="js/nav.js"></script>
 </body>
 </html>
