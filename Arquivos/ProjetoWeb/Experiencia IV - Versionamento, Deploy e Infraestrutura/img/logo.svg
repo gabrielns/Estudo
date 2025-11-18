@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="Logo ONG das ONG's">
+  <rect width="100%" height="100%" fill="#0b5ea8" rx="20"/>
+  <g fill="#fff" font-family="Segoe UI, Roboto, Arial, sans-serif" text-anchor="middle">
+    <text x="120" y="92" font-size="48" font-weight="800">ONG</text>
+    <text x="120" y="132" font-size="18" font-weight="700">das ONG's</text>
+  </g>
+</svg>
